@@ -34,21 +34,23 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #f4623a;
+  --bs-hbjn: #a5ae99;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #000;
   --bs-primary-rgb: 244, 98, 58;
+  --bs-hbjn-rgb: 165, 174, 152;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
@@ -157,6 +159,11 @@ p {
   margin-bottom: 1rem;
 }
 
+p2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size : 0.3rem;
+}
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -7798,7 +7805,10 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
-
+.bg-hbjn {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-hbjn-rgb), var(--bs-bg-opacity)) !important;
+}
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
@@ -11379,7 +11389,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/hbjn1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11441,5 +11451,40 @@ header.masthead h1, header.masthead .h1 {
   font-size: 1.2rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+#services .container-fluid, #services .container-sm, #services .container-md, #services .container-lg, #services .container-xl, #services .container-xxl {
+  max-width: 1920px;
+}
+#services .container-fluid .services-box, #services .container-sm .services-box, #services .container-md .services-box, #services .container-lg .services-box, #services .container-xl .services-box, #services .container-xxl .services-box {
+  position: relative;
+  display: block;
+}
+#services .container-fluid .services-box .services-box-caption, #services .container-sm .services-box .services-box-caption, #services .container-md .services-box .services-box-caption, #services .container-lg .services-box .services-box-caption, #services .container-xl .services-box .services-box-caption, #services .container-xxl .services-box .services-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#services .container-fluid .services-box .services-box-caption .product-name, #services .container-sm .services-box .services-box-caption .product-name, #services .container-md .services-box .services-box-caption .product-name, #services .container-lg .services-box .services-box-caption .product-name, #services .container-xl .services-box .services-box-caption .product-name, #services .container-xxl .services-box .services-box-caption .product-name {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#services .container-fluid .services-box .services-box-caption .product-description, #services .container-sm .services-box .services-box-caption .product-description, #services .container-md .services-box .services-box-caption .product-description, #services .container-lg .services-box .services-box-caption .product-description, #services .container-xl .services-box .services-box-caption .product-description, #services .container-xxl .services-box .services-box-caption .product-description {
+  font-size: 1.2rem;
+}
+#services .container-fluid .services-box:hover .services-box-caption, #services .container-sm .services-box:hover .services-box-caption, #services .container-md .services-box:hover .services-box-caption, #services .container-lg .services-box:hover .services-box-caption, #services .container-xl .services-box:hover .services-box-caption, #services .container-xxl .services-box:hover .services-box-caption {
   opacity: 1;
 }

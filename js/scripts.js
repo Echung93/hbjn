@@ -51,6 +51,10 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Activate SimpleLightbox plugin for services items
+    new SimpleLightbox({
+        elements: '#services a.services-box'
+    });
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
