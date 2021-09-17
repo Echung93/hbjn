@@ -11429,7 +11429,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(130, 118, 106, 0.9);
+  background: rgba(130, 118, 106, 0.6);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11464,7 +11464,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(130, 118, 106, 0.9);
+  background: rgba(130, 118, 106, 0.6);
   transition: opacity 0.25s ease;
   text-align: center;
 }
