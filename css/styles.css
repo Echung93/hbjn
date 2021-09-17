@@ -12,6 +12,7 @@
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
   --bs-gray: #6c757d;
+  --bs-brown: #82766A;
   --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
@@ -34,6 +35,7 @@
   --bs-primary-rgb: 244, 98, 58;
   --bs-hbjn-rgb: 165, 174, 152;
   --bs-secondary-rgb: 108, 117, 125;
+  --bs-brown-rgb: 130, 118, 106
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -99,7 +101,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
-h1, .h1 {
+h1, 
+.h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
